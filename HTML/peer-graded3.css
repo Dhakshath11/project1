@@ -1,0 +1,20 @@
+body
+{
+ background-color : lightblue;
+}
+h1
+{ 
+ text-align:center;
+ color:navy;
+}
+#google
+{
+ float:left;
+ hieght:40px;
+}
+table
+{
+ 
+ border : 1px solid red;
+ width: 50%;
+}

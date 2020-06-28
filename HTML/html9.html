@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+<title>HTML Forms1</title>
+
+<link rel="stylesheet" type ="text/css" href="html9(subpart).css">
+
+</head>
+
+<form>
+  First name:<br>
+  <input type="text" name="firstname" required><br>
+  Last name:<br>
+  <input type="text" name="lastname" value="Amith"><br>
+  User password:<br> 
+  <input type="password" name="password"><br>
+
+  <input type="radio" name="food" value="Pizza" checked>Pizza<br>
+  <input type="radio" name="food" value="Tacos">Tacos<br>
+  <input type="radio" name="food" value="Salad">Salad<br>
+   
+  Please select:<br>
+   <input type="checkbox" name="skills" value="HTML">I know HTML<br>
+   <input type="checkbox" name="skills" value="JavaScript">I know JavaScript<br>
+   <input type="checkbox" name="skills" value="MATLAB">I know MATLAB<br>
+  
+  Quantity(between 1 to 5):
+  <input type="number" name="quantity" min="1" max="5"><br>
+
+  Birthday:
+  <input type="date" name="birthday"><br>
+ 
+  Select ypur favorite Color:
+  <input type="color" name="favcolor"><br>
+
+ CountryCode:
+ <input type="text" name="countrycode" pattern="[A-Za-z]{3}" title="Three letter country code" required><br>
+
+<!-- pattern incdicate pattern to be used,in the above pattern is an ANY character from A to Z and a to z
+     whose size is only 3-->
+<input type="submit" value="submit">
+</form>
+</body>
+</html>

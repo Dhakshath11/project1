@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html>
+<head>
+
+<title>Math operation</title>
+
+<link rel="stylesheet" type="text/css" href="java6(subpart).css"> 
+<!-- This is use to call subpart ie css part-->
+<script>
+function doMath()
+{
+ var x=10;
+ var y=20;
+ var z=5;
+ var answer = (x * y) / z;
+
+document.getElementById("output").innerHTML = "This is result " + answer;
+}
+</script>
+
+<style type="test/css">
+ p.regular {color:blue;font-size:100%;}
+ p.testClass {color:green;font-size:150%;}
+</style>
+
+<!-- these are declared and any para with these identity will be assigned-->
+
+</head>
+
+<body>
+<h1>WELCOME!</h1>
+<p>Java Script Testing.</p>
+ 
+<button onclick="doMath();">DO THE MATH</button>
+<p id="output" style="color:green;font-size:200%;"></P>
+
+<p class="regular">This is test of regular.</p>
+
+<p class="testClass">This is test of test class.</p>
+
+</body>
+</html>

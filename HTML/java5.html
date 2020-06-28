@@ -1,0 +1,56 @@
+<!-- Input:type text and double click on screen-->
+
+<!DOCTYPE html>
+<html>
+
+<head>
+<title>Onblur Event Page</title>
+
+<script>
+function chechField1()
+{
+ var field = document.getElementById("field1").value;
+ 
+ if(field.length < 5)
+   document.getElementById("message1").innerHTML = "Too short!";
+
+ else
+   document.getElementById("message1").innerHTML = "Thats's Long Enough!";
+}
+
+function chechField2()
+{
+ var field = document.getElementById("field2").value;
+ 
+ if(field.length != "")
+   document.getElementById("message2").innerHTML = "input accepted!";
+
+ else
+   document.getElementById("message2").innerHTML = "provide input";
+}
+
+function chechField3()
+{
+ var field = document.getElementById("field3").value;
+ 
+ if(field.length < 100)
+   document.getElementById("message3").innerHTML = "Too short!";
+
+ else
+   document.getElementById("message3").innerHTML = "Thats's Long Enough!";
+}
+</script>
+</head>
+
+<body>
+
+<p> JavaScript onblur Event Tests.</p>
+
+<input id="field1" type="text" onblur="chechField1();"/> <span id="message1"></span>
+<br><br>
+<input id="field2" type="text" onblur="chechField2();"/> <span id="message2"></span>
+<br><br>
+<input id="field3" type="text" onblur="chechField3();"/> <span id="message3"></span>
+
+</body>
+</html>

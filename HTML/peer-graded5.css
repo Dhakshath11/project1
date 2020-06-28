@@ -1,0 +1,54 @@
+body
+{
+ background-color : lightblue;
+}
+#firstname
+{
+margin-left : 520px; 
+}
+#lastname
+{
+margin-left : 520px; 
+}
+
+#number
+{
+margin-left : 520px; 
+}
+#new
+{
+margin-left : 520px; 
+}
+#new1
+{
+margin-left : 520px; 
+}
+#space
+{
+margin-left : 520px; 
+}
+#button
+{
+ margin-left: 500px;
+ width :20%;
+ border-radius : 20px;
+ color:red;
+}
+#image
+{
+ margin-left: 500px;
+}
+h1
+{ 
+ text-align:center;
+ color:navy;
+}
+h2
+{ 
+ text-align:center;
+ color:green;
+}
+h3
+{ 
+ margin-left : 500px;
+}

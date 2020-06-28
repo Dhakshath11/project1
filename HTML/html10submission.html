@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+<title>HTML Forms1</title>
+
+<link rel="stylesheet" type ="text/css" href="html9(subpart).css">
+
+<script>
+function validateForm()
+{
+  var pass1 = document.getElementById("password1").value;
+  var pass2 = document.getElementById("password2").value;
+
+ if(pass1 == pass2)
+ {
+  alert("Password match");
+  return true;
+ }
+ else
+ {
+  alert("Password did not match");
+  return false;
+ }
+  return false;
+}
+
+</script>
+
+</head>
+
+<form action="mySubmitpage.html" onsubmit = "return validateForm();" >
+  
+First name:<br>
+  <input type="text" name="firstname"><br>
+  Last name:<br>
+  <input type="text" name="lastname"><br>
+  User password:<br> 
+  <input type="password" id="password1"><br>
+  <input type="password" id="password2"><br>
+
+  <input type="radio" name="food" value="Pizza" checked>Pizza<br>
+  <input type="radio" name="food" value="Tacos">Tacos<br>
+  <input type="radio" name="food" value="Salad">Salad<br>
+   
+  Please select:<br>
+   <input type="checkbox" name="skills" value="HTML">I know HTML<br>
+   <input type="checkbox" name="skills" value="JavaScript">I know JavaScript<br>
+   <input type="checkbox" name="skills" value="MATLAB">I know MATLAB<br>
+  
+  Quantity(between 1 to 5):
+  <input type="number" name="quantity" min="1" max="5"><br>
+
+  Birthday:
+  <input type="date" name="birthday"><br>
+ 
+  Select ypur favorite Color:
+  <input type="color" name="favcolor"><br>
+
+ CountryCode:
+ <input type="text" name="countrycode" pattern="[A-Za-z]{3}" title="Three letter country code"><br>
+
+<input type="submit" value="submit">
+<button>CLICK ME</button>
+
+</form>
+</body>
+</html>

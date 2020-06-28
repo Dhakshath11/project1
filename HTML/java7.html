@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html>
+<head>
+
+<title>Math operation</title>
+
+<script>
+function doMath()
+{
+ var x=10;
+ var y=20;
+ var z=5;
+ var answer = (x * y) / z;
+
+document.getElementById("output").innerHTML = "This is result " + answer;
+}
+</script>
+
+<style type="text/css">
+ p.regular {color:blue;font-size:100%;}
+ p.medium {color:green;font-size:150%;}
+</style>
+
+<!-- these are declared and any para with these identity will be assigned-->
+
+</head>
+
+<body style="background-color:skyblue;">>  <!--this for only 1 style is used,for multiple go for css subpart method-->
+<h1>WELCOME!</h1>
+<p>Java Script Testing.</p>
+ 
+<button onclick="doMath();">DO THE MATH</button>
+<p id="output" style="color:green;font-size:200%;"></P>
+
+<p class="regular">This is test of regular.</p>
+
+<p class="medium">This is test of test class.</p>
+
+</body>
+</html>

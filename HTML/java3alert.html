@@ -1,0 +1,32 @@
+<!-- input,inside box write any interger-->
+<!DOCTYPE html>
+<html>
+
+<head>
+<title>Alert page</title>
+
+<script> //javascript starts
+
+function myalertmath()
+{
+  var userNumber =  document.getElementById("mathInput").value;
+  
+    alert("Your number x 5 is "+ userNumber * 5); //alert is keyword n + is used to concartinate.
+}
+
+//javascript ends after next line
+</script>
+
+</head>
+
+<body>
+<p> Javascript Alert Tests.</p>
+
+<button onclick="alert('The test worked');">Alert Test</button>
+<input id="mathInput" type="number"/>
+<button onclick="myalertmath()">Multiply x 5</button> 
+
+<p id="test"></p>
+</body>
+
+</html>

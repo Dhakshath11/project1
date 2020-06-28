@@ -1,0 +1,45 @@
+<!--HTML is an static ie in website it cannot data,we need to write code
+whereas Javascript is an dynamic langauage.
+HTML is an MARKUO lang ie it cannot loop or interact with users,but Javascript is an programing lang.
+
+LETS SEE FIRST JAVASCRIPT(to make webpage Dynamic)-->
+
+<!DOCTYPE html>
+<html>
+
+<head>
+<title>My Dynamic details of page</title>
+
+<script type="text/javascript"> //javascript starts
+
+function displayInput() //function will display blue version of input.
+{
+  var testInput =  document.getElementById("name").value;
+  
+  if(testInput.length == 0)
+  {
+    document.getElementById("para").innerHTML = "Hey,you didnt type anything!";
+     //document.getElementById("").innerHTML is keyword
+  }
+  else
+     document.getElementById("para").innerHTML =testInput;
+}
+
+//javascript ends after next line
+</script>
+
+</head>
+
+<body>
+
+<h1 style="color:blue;">Lets see a button.</h1>
+
+<input id="name" type="text"/>
+
+<button onclick="displayInput();">click Me</button>
+
+<p id="para" style="color:blue;"></p>
+
+</body>
+
+</html>

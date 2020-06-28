@@ -1,0 +1,16 @@
+body
+{
+ background-color : lightblue;
+}
+h1
+{ 
+ text-align:center;
+ color:navy;
+}
+
+.testClass
+{
+ color:red;
+ font-size:300%;
+ margin-left : 20px;  //20 pixel towards lest from screen
+}
